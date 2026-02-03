@@ -1,0 +1,56 @@
+body{
+    background-image: none;
+}
+article img{
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slideshow{
+    display: flex;
+    animation: slide 2s infinite;
+}
+
+@media (min-width:1000px) {
+    h3{
+        font-size: 30px;
+    }
+    a{
+        font-size: larger;
+    }
+    article{
+        align-items: center;
+        margin-top: 100px;
+        div.text{
+            align-self: flex-start;
+            margin-left: 160px;
+        }
+        img{
+            width: 650px;
+            height: 400px;
+        }
+    }
+    a.seeMore{
+        top: 58%;
+        left: 42%;
+    }
+}
+@media (min-width:1400px) {
+    article img{
+        height: 600px;
+        width: 900px;
+    }
+    article.project a.seeMore{
+        top: 60%;
+        left: 45%;
+    }
+    article div.text{
+        margin-left: 390px;
+    }
+    ul.nav a{
+        padding: 15px 50px;
+    }
+}

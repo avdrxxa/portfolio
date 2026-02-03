@@ -1,0 +1,295 @@
+body{
+    background-image: url('images/mobil\ bild\ svartvit.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --glass-bg: rgba(15, 15, 15, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-highlight: rgba(255, 255, 255, 0.08);
+    --glass-shadow: rgba(0, 0, 0, 0.55);
+    --accent-color: rgb(162, 161, 161);
+}
+nav.sticky{
+    position: sticky;
+    top: 0;     
+    z-index: 10;   
+    background: rgba(15,15,15,0.9);   
+    margin: 0;
+}
+.main, html{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrap {
+    top: 0;
+    width: fit-content;
+    display: block;
+    position: relative;
+    margin: 30px auto 0 auto;
+    padding: 3px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 999px;
+    border: 1px solid var(--glass-border);
+    box-shadow:
+        0 8px 30px var(--glass-shadow),
+        inset 0 0 0 1px var(--glass-highlight);
+}
+.nav-wrap::after {
+    content: "";
+    inset: -1px;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.22),
+        rgba(255,255,255,0.02)
+    );
+    opacity: 0.10;
+}
+
+.nav {
+    width: fit-content;
+    margin: 0;
+    padding: 2px;
+    position: relative;
+    anchor-name: --nav;
+}
+.nav a:hover {
+    anchor-name: --nav;
+}
+
+
+.bubble.hover {
+    position-anchor: --nav;
+    opacity: 0.6;
+}
+
+.nav a {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    padding: 14px 30px;
+    color: rgba(255,255,255,0.92);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Carme', sans-serif;
+    letter-spacing: 0.4px;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav a.på {
+    anchor-name: --active;
+    color: white;
+}
+
+.bubble {
+    position: absolute;
+    z-index: 1;
+    top: anchor(top);
+    right: anchor(right);
+    bottom: anchor(bottom);
+    left: anchor(left);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.20);
+    box-shadow:
+        0 4px 18px rgba(0,0,0,0.05),
+        inset 0 0 0 1px rgba(255,255,255,0.02);
+    transition: all 0.25s ease;
+}
+
+.bubble.på {
+    position-anchor: --active;
+}
+
+.bubble.hover {
+    position-anchor: --nav;
+    opacity: 0.4;
+}
+
+.target {
+    position: relative;
+    z-index: 0;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+nav.sticky{
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+.active{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 12px 50px;
+    padding: 0;
+}
+.utgrått{
+    color: var(--accent-color);
+}
+
+nav img{
+    margin: 25px;
+    
+}
+
+ul a{
+    font-family: "Bruno Ace", sans-serif;
+    font-size: x-small;
+    cursor: pointer;
+}
+
+.break{
+    height: 500px
+}
+.break2{
+    height: 200px;
+}
+button.sticky{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    padding: 20px 30px;
+    border: 1px;
+    border-radius: 30px;
+    border-color: rgb(117, 117, 117, 0.7);
+    cursor: pointer;
+    z-index: 9;
+    background: linear-gradient(180deg, rgba(70, 70, 70, 0.75),rgba(30, 30, 30, 0.65));
+    box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
+}
+
+@media (min-width:1000px) {
+    body{
+        background-image: url('images/bild\ tablet\ about.avif');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav.sticky {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+
+        img{
+            flex-grow: 1;
+            height: 170px;
+            margin: 0;
+        }
+    }
+    div.tablet{
+        margin-top: 100px;
+    }
+    ul.map{
+        margin-top: 50px;
+        a{
+            font-size: small;
+        }
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            width: 700px;
+            font-size: larger;
+        }
+        h2{
+            font-size: 35px;
+        }
+    }
+    .carusel-wrap{
+        width: 800px;
+    }
+    .carusel img{
+        height: 50px;
+    }
+    .carusel img:nth-of-type(7){
+            width: 50px;
+    }
+    .carusel img:nth-of-type(4){
+            height: 59px;
+    }
+    #about{
+        width: 700px;
+        margin-left: 90px;
+        margin-top: 100px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 70px;
+    }
+    .exp h2{
+        font-size: 50px;
+    }
+    button.sticky{
+        padding: 25px 60px;
+        border-radius:999px ;
+        font-size: large;
+    }
+    .exp {
+        padding-bottom: 200px;
+        a{
+            padding: 21px 50px ;
+            font-size: larger;
+            border-radius: 999px;
+        }
+    }
+    div.nav-wrap{
+        a{
+            font-size: 16px;
+            flex-grow: 1;
+        }
+    }
+}
+@media (min-width:1400px) {
+    div.carusel-wrap{
+        width: 100%;
+        margin-top: 50px;
+    }
+    nav.sticky img{
+        justify-content: flex-end;
+        width: 350px;
+
+    }
+    nav.sticky{
+        gap:250px;
+        justify-content: space-around;
+    }
+    ul.nav a{
+        padding: 15px 50px;
+    }
+}

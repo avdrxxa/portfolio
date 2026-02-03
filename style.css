@@ -1,0 +1,97 @@
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: "Bruno Ace", sans-serif;
+    margin: 30px 0;
+}
+
+p, h3{
+    color: rgb(203, 203, 203);
+    font-family: "Carme", sans-serif;
+}
+h3{
+    font-size: 30px;
+}
+
+div.text{
+    margin: 50px 30px;
+}
+
+.expe{
+    color: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 30px;
+    border-color: rgb(117, 117, 117, 0.7);
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(70, 70, 70, 0.75),rgba(30, 30, 30, 0.65));
+    box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
+}
+.carusel-wrap {
+    overflow: hidden;
+    background: #1a1a1a; 
+    padding: 10px;
+}
+
+.carusel{
+    display: flex;
+    width: calc(200%); 
+    animation: scroll 15s linear infinite;
+}
+
+.carusel img { 
+    margin: 0 25px;
+    object-fit: contain;
+}
+
+.skills p{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.skills h2{
+    justify-self: center;
+    font-size: larger;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+@media (min-width:1400px) {
+    div.carusel-wrap{
+        width: 100%;
+        margin-top: 50px;
+    }
+    nav.sticky img{
+        justify-content: flex-end;
+
+    }
+    nav.sticky{
+        gap:300px;
+        justify-content: space-between;
+    }
+    body{
+        background-image:url('images/bild\ desktop\ about.avif') ;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

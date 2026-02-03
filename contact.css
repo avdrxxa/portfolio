@@ -1,0 +1,108 @@
+
+div img{
+    height: 25px;
+    margin-left:6px;
+    align-items: center;
+}
+
+body{
+    background-image: url('images/mobil\ bild.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.länk{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content:center;
+    margin: 20px;
+    padding: 40px 40px ;
+    margin-top: 80px;
+}
+
+.rad{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        text-align: justify;
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+
+div p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+img.andra{
+    height: 31px;
+    margin-left: 4px;
+}
+
+.ask {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+    .namn, .email, .comm{
+        background-color: black;
+        color: rgb(238, 238, 238);
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Carme', sans serif;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+.comm{
+    margin-top: 40px;
+    height: 100px;
+    text-align: start;
+}
+
+.submit{
+    width: 50%;
+    align-self: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 18px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+@media (min-width:1000px) {
+    div.länk{
+        margin-top: 200px;
+        margin-left: 00px;
+        align-items: center;
+    }
+    div.ask{
+        align-items: center;
+        justify-content: center;
+        margin: 100px 200px;
+        .namn, .email, .comm{
+            padding:20px 200px;
+        }
+    }
+    .ask .submit{
+        width: 400px;
+    }
+    body{
+        background-image: url('images/mobil\ bild.avif');
+        background-position: center;
+        background-size: cover;
+        background-attachment: unset;
+    }
+}
+@media (min-width:1740px) {
+    body{
+        background-image: url('images/bild\ desktop\ about.avif');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
