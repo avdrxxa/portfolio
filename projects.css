@@ -1,16 +1,4 @@
-@media (min-width:570px) {
-    article{
-        img{
-        width:  100%;
-        height: 300px;
-        border-radius: 25px;
-        margin-top: 20px;
-        object-fit: cover;
-        overflow: hidden;
-        position: relative;
-        }
-    }
-}
+
 article{
     width: 90%;
     display: flex;
@@ -160,8 +148,6 @@ div.webb{
         height: 600px;
         width: 900px;
     }
-    article a.seeMore{
-    }
     article div.text{
         margin-left: 390px;
     }
@@ -170,20 +156,19 @@ div.webb{
     }
 }
 @media (min-width:1740px) {
-    div.grap{
+    div.grap.hidden{
         display: block;
     }
-    div.alla{
+    main div.alla{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        flex-wrap: wrap;
         align-content: center;
         align-items: flex-start;
     }
     article img{
-        width: 900px;
-        height: 550px;
+        width: 750px;
+        height: 450px;
     }
     div.webb, div.grap{
         display: flex;
@@ -191,10 +176,11 @@ div.webb{
         align-items: center;
         justify-content: center;
     }
-    a.seeMore{
-    }
-    div.grap .project:nth-of-type(1){
+    div.grap .project:nth-of-type(2){
         margin-top: 128px;
+    }
+    div.grap .project:nth-of-type(3){
+        margin-top: 138px;
     }
     article div.text{
         margin: 0;
@@ -214,4 +200,12 @@ div.webb{
     body{
         background-image: url('images/bild\ desktop\ svart\ vit.avif');
     }
+    .grap article img:nth-of-type(1){
+        margin-top: 30px;
+    }
+    .grap article img:nth-of-type(2){
+        margin-top: 150px;
+        padding-top: 100px;
+    }
+
 }

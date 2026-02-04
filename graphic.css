@@ -1,19 +1,3 @@
-body{
-    background-image: none;
-}
-article img{
-    height: 300px;
-    width: 100%;
-    border-radius: 25px;
-    margin-top: 20px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.webb.hidden{
-    display: none;
-}
-
 article{
     width: 90%;
     display: flex;
@@ -23,10 +7,54 @@ article{
     margin: 30px;
     position: relative;
 }
-.grap{
+nav img{
+    margin: 25px;
+    width: auto;
+}
+.webb.hidden{
+    display: none;
+}
+
+
+body{
+    background-image: none;
+}
+article img{
+    width:  100%;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+article img{
+        width:  100%;
+        height: 300px;
+        border-radius: 25px;
+        margin-top: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+article.project .text{
+    align-self: flex-start;
+    margin-left: 15px;
+}
+.utgrått{
+    color: var(--accent-color);
+}
+
+.text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+article div a{
+    color: rgb(202, 230, 255);
 }
 
 a.seeMore{
@@ -45,36 +73,75 @@ a.seeMore{
     box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
 }
 
-.slideshow{
+h3{
+    color: white;
+    font-family: 'Carme', sans-serif;
+}
+.footer{
     display: flex;
-    animation: slide 2s infinite;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
 }
-article.project .text{
-    align-self: flex-start;
-    margin-left: 15px;
+.graphic{
+    color: white;
+    margin-top: 36px;
+    padding: 20px 50px;
+    border: 1px;
+    font-size: 17px;
+    border-radius: 30px;
+    border-color: rgb(117, 117, 117, 0.6);
+    cursor: pointer;
+    z-index: 7;
+    background: linear-gradient(180deg, rgba(70, 70, 70, 0.85),rgba(30, 30, 30, 0.95));
+    box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
+    margin-bottom: 100px;
 }
+
+.git{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 90px;
+    img{
+        width: 25px;
+        margin-right: 15px;
+    }
+}
+div.grap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 @media (min-width:1000px) {
     h3{
-        font-size: 30px;
-    }
-    nav img{
-        flex-grow: 0;
+        font-size: 35px;
     }
     a{
         font-size: larger;
     }
+
     article{
         align-items: center;
         margin-top: 100px;
+        width: auto;
         div.text{
             align-self: flex-start;
-            margin-left: 160px;
         }
         img{
             width: 650px;
             height: 400px;
         }
+    }
+    a.seeMore{
+        top: 63%;
+    }
+    nav.sticky{
+        justify-content: space-around;
+        padding: 0 50 0 100px;
     }
 }
 @media (min-width:1400px) {
@@ -82,10 +149,66 @@ article.project .text{
         height: 600px;
         width: 900px;
     }
-    article div.text{
-        margin-left: 390px;
-    }
     ul.nav a{
         padding: 15px 50px;
+    }
+}
+@media (min-width:1740px) {
+    div.webb.hidden{
+        display: block;
+    }
+    main div.alla{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-content: center;
+        align-items: flex-start;
+    }
+    article img{
+        width: 750px;
+        height: 450px;
+    }
+    div.webb, div.grap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.grap .project:nth-of-type(1){
+        margin-top: 108px;
+    }
+    div.grap .project:nth-of-type(2){
+        margin-top: 68px;
+    }
+    div.grap .project:nth-of-type(3){
+        margin-top: 78px;
+    }
+    div.grap.hidden {
+        margin-top: 28px;
+    }
+    article div.text{
+        margin: 0;
+    }
+    .graphic{
+        display: none;
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    ul.map{
+        display: none;
+    }
+    nav.sticky{
+        padding: 70px 0 70px 200px;
+    }
+    body{
+        background-image: url('images/bild\ desktop\ svart\ vit.avif');
+    }
+    .grap article img:nth-of-type(1){
+        margin-top: 30px;
+    }
+    .grap article img:nth-of-type(2){
+        margin-top: 150px;
+        padding-top: 100px;
     }
 }
