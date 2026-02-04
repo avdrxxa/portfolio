@@ -1,7 +1,22 @@
+@media (min-width:570px) {
+    article{
+        img{
+        width:  100%;
+        height: 300px;
+        border-radius: 25px;
+        margin-top: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        }
+    }
+}
 article{
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 30px;
     position: relative;
 }
@@ -9,16 +24,35 @@ nav img{
     margin: 25px;
     width: auto;
 }
+.grap.hidden{
+    display: none;
+}
 
 body{
     background-image: none;
 }
 article img{
+    width:  100%;
     height: 300px;
     border-radius: 25px;
     margin-top: 20px;
     object-fit: cover;
     overflow: hidden;
+    position: relative;
+}
+article img{
+        width:  100%;
+        height: 300px;
+        border-radius: 25px;
+        margin-top: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+article.project .text{
+    align-self: flex-start;
+    margin-left: 15px;
 }
 .utgrått{
     color: var(--accent-color);
@@ -37,8 +71,9 @@ article div a{
 
 a.seeMore{
     position: absolute;
-    left: 34%;
-    top: 55%;
+    left: 50%;
+    top: 60%;
+    transform: translate( -50%, -50%);
     color: white;
     padding: 15px 40px;
     border: 1px;
@@ -86,6 +121,12 @@ h3{
         margin-right: 15px;
     }
 }
+div.webb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 @media (min-width:1000px) {
     h3{
@@ -97,9 +138,9 @@ h3{
     article{
         align-items: center;
         margin-top: 100px;
+        width: auto;
         div.text{
             align-self: flex-start;
-            margin-left: 160px;
         }
         img{
             width: 650px;
@@ -108,7 +149,11 @@ h3{
     }
     a.seeMore{
         top: 58%;
-        left: 42%;
+        left: 38%;
+    }
+    nav.sticky{
+        justify-content: space-around;
+        padding: 0 50 0 100px;
     }
 }
 @media (min-width:1400px) {
@@ -116,9 +161,9 @@ h3{
         height: 600px;
         width: 900px;
     }
-    article .seeMore{
-        top: 60%;
-        left: 45%;
+    article a.seeMore{
+        top: 55%;
+        left: 41%;
     }
     article div.text{
         margin-left: 390px;
@@ -140,8 +185,8 @@ h3{
         align-items: flex-start;
     }
     article img{
-        width: 600px;
-        height: 400px;
+        width: 900px;
+        height: 550px;
     }
     div.webb, div.grap{
         display: flex;
@@ -168,7 +213,7 @@ h3{
         display: none;
     }
     nav.sticky{
-        padding-bottom: 70px;
+        padding: 70px 0 70px 200px;
     }
     body{
         background-image: url('images/bild\ desktop\ svart\ vit.avif');

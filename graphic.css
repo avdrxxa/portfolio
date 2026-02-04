@@ -3,20 +3,58 @@ body{
 }
 article img{
     height: 300px;
+    width: 100%;
     border-radius: 25px;
     margin-top: 20px;
     object-fit: cover;
     overflow: hidden;
+}
+article{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+}
+.grap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.seeMore{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate( -50%, -50%);
+    color: white;
+    padding: 15px 40px;
+    border: 1px;
+    border-radius: 30px;
+    border-color: rgb(117, 117, 117, 0.6);
+    cursor: pointer;
+    z-index: 9;
+    background: linear-gradient(180deg, rgba(70, 70, 70, 0.85),rgba(30, 30, 30, 0.95));
+    box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
 }
 
 .slideshow{
     display: flex;
     animation: slide 2s infinite;
 }
+article.project .text{
+    align-self: flex-start;
+    margin-left: 15px;
+}
 
 @media (min-width:1000px) {
     h3{
         font-size: 30px;
+    }
+    nav img{
+        flex-grow: 0;
     }
     a{
         font-size: larger;
