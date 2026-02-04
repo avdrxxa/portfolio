@@ -9,6 +9,11 @@ article img{
     object-fit: cover;
     overflow: hidden;
 }
+
+.webb.hidden{
+    display: none;
+}
+
 article{
     width: 90%;
     display: flex;
@@ -71,19 +76,11 @@ article.project .text{
             height: 400px;
         }
     }
-    a.seeMore{
-        top: 58%;
-        left: 42%;
-    }
 }
 @media (min-width:1400px) {
     article img{
         height: 600px;
         width: 900px;
-    }
-    article.project a.seeMore{
-        top: 60%;
-        left: 45%;
     }
     article div.text{
         margin-left: 390px;

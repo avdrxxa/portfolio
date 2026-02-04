@@ -148,8 +148,7 @@ div.webb{
         }
     }
     a.seeMore{
-        top: 58%;
-        left: 38%;
+        top: 63%;
     }
     nav.sticky{
         justify-content: space-around;
@@ -162,8 +161,6 @@ div.webb{
         width: 900px;
     }
     article a.seeMore{
-        top: 55%;
-        left: 41%;
     }
     article div.text{
         margin-left: 390px;
@@ -195,7 +192,6 @@ div.webb{
         justify-content: center;
     }
     a.seeMore{
-        left: 37%;
     }
     div.grap .project:nth-of-type(1){
         margin-top: 128px;
