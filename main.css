@@ -1,7 +1,6 @@
 body{
     background-image: url('images/mobil\ bild\ svartvit.avif');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     margin: 0;
@@ -198,6 +197,7 @@ a.sticky{
             flex-grow: 1;
             height: 170px;
             margin: 0;
+            margin-left: auto;
         }
     }
     div.tablet{
@@ -276,18 +276,34 @@ a.sticky{
     }
 }
 @media (min-width:1400px) {
+    body{
+        background-image: none;
+    }
     div.carusel-wrap{
         width: 100%;
         margin-top: 50px;
     }
     nav.sticky img{
-        justify-content: flex-end;
         width: 350px;
-
+        float: right;
+        object-position: right;
+    }
+    div#about img.hidden{
+        display: block;
+        width: 1000px;
+        position: absolute;
+        top: 300px;
+        right: 30px;
+        z-index: -2;
+        flex-grow: 1;
+    }
+    div#skills p{
+        width: 1000px;
     }
     nav.sticky{
         gap:250px;
         justify-content: space-around;
+        margin-right: 0;
     }
     ul.nav a{
         padding: 15px 50px;
@@ -296,5 +312,16 @@ a.sticky{
 @media (min-width:720px) and (max-width:1000px ) {
     ul.nav a{
         padding: 18px 60px;
+    }
+}
+@media (min-width:1633px) {
+    nav.sticky{
+        gap: 300px;
+    }
+}
+
+@media (min-width:1833px) {
+    nav.sticky{
+        gap: 500px;
     }
 }

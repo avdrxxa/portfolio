@@ -9,6 +9,9 @@ h2{
     font-family: "Bruno Ace", sans-serif;
     margin: 30px 0;
 }
+div#exp h2{
+    font-size: larger;
+}
 
 p, h3{
     color: rgb(203, 203, 203);
@@ -84,9 +87,12 @@ div.text{
         width: 100%;
         margin-top: 50px;
     }
+    div#about{
+        display: flex;
+        align-items: center;
+    }
     nav.sticky img{
-        justify-content: flex-end;
-
+        object-position: right;
     }
     nav.sticky{
         gap:300px;
