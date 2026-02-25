@@ -41,13 +41,13 @@ submit.addEventListener('click', () => {
     const subject = encodeURIComponent(`${asker.namn} has a question:`)
     const body = encodeURIComponent(`Name: ${asker.namn}\nYour email: ${asker.email}\nComment: ${asker.comm}`)
     window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`
-    const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
-    if (isMobile) {
-        alert("If your email app does not open, please copy the message and send it manually.");
+    const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent)
+    if (isMobile){
+        alert("If your email app does not open, please copy the message and send it manually.")
     }
-    window.location.href = mailtoLink;
+    window.location.href = mailtoLink
 })
 
 
-window.addEventListener("scroll", updateActiveLink);
-window.addEventListener("load", updateActiveLink);
+window.addEventListener("scroll", updateActiveLink)
+window.addEventListener("load", updateActiveLink)

@@ -111,17 +111,13 @@ img.andra{
         width: 400px;
     }
     body{
-        background-image: url('images/mobil\ bild.avif');
-        background-position: center;
+        background-image: url('images/bild\ tablet\ about.avif');
         background-size: cover;
         background-attachment: unset;
     }
 }
 @media (min-width:1740px) {
     body{
-        background-image: url('images/bild\ desktop\ about.avif');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        background-image: none;
     }
 }
