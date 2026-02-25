@@ -179,7 +179,12 @@ a.sticky{
     background: linear-gradient(180deg, rgba(70, 70, 70, 0.75),rgba(30, 30, 30, 0.65));
     box-shadow: inset 0 2px 7px rgba(35, 35, 35, 0.6);
 }
-
+@media (min-width:650px) {
+    nav.sticky img{
+        width: 500px;
+        align-self: center;
+    }
+}
 @media (min-width:1000px) {
     body{
         background-image: url('images/bild\ tablet\ about.avif');

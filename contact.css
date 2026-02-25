@@ -10,6 +10,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+h2{
+    color: rgb(255, 255, 255);
+    align-self: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-family: 'Bruno Ace', 'Franklin Gothic Medium', Arial, sans-serif;
+}
 .länk{
     display: flex;
     flex-direction: column;
@@ -73,6 +81,17 @@ img.andra{
     border-radius: 30px;
     margin-top: 20px;
     margin-bottom: 100px;
+}
+@media (min-width:700px) {
+    div.ask {
+        width: 500px;
+        align-self: center;
+        justify-self: center;
+    }
+    div.länk{
+        align-self: center;
+        justify-self: center;
+    }
 }
 @media (min-width:1000px) {
     div.länk{

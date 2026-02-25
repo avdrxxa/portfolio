@@ -11,25 +11,36 @@ function updateActiveLink() {
     }
 }
 
-let namn= document.querySelector('.namn')
-let email= document.querySelector('.email')
-let comm= document.querySelector('.comm')
+const submit = document.querySelector('button.submit')
 
-let submit= document.querySelector('button.submit')
+const forum = []
 
-let askers=[]
-
-submit.addEventListener('click', ()=>{
-    namn= namn.value 
-    email=email.value
-    comm= comm.value
-    if(namn===undefined||email===undefined||comm===''){
-        alert('Make sure you entered the corect values!')
+submit.addEventListener('click', () => {
+    const namnInput = document.querySelector('.namn')
+    const emailInput = document.querySelector('.email')
+    const commInput = document.querySelector('.comm')
+    const namn = namnInput.value.trim()
+    const email = emailInput.value.trim()
+    const comm = commInput.value.trim()
+    if (namn === '' || email === '' || comm === '') {
+        alert('Make sure you entered the correct values!')
         return
-    }else{
-        askers.push(namn, email, comm)
-        console.log(askers)
     }
+    const asker = {
+        namn:namnInput.value,
+        email:emailInput.value,
+        comm:commInput.value
+    }
+    forum.push(asker)
+    console.log(asker)
+    console.log(forum)
+    namnInput.value = ''
+    emailInput.value = ''
+    commInput.value = ''
+    let myEmail='andreea-raluca.damian@gmail.com'
+    const subject = encodeURIComponent(`${asker.namn} has a question:`)
+    const body = encodeURIComponent(`Name: ${asker.namn}\nYour email: ${asker.email}\nComment: ${asker.comm}`)
+    window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`
 })
 
 window.addEventListener("scroll", updateActiveLink);
