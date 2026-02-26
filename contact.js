@@ -37,7 +37,7 @@ submit.addEventListener('click', () => {
     namnInput.value = ''
     emailInput.value = ''
     commInput.value = ''
-    let myEmail='andreea-raluca.damian@gmail.com'
+    let myEmail='andreea.damian.raluca@gmail.com'
     const subject = encodeURIComponent(`${asker.namn} has a question:`)
     const body = encodeURIComponent(`Name: ${asker.namn}\nYour email: ${asker.email}\nComment: ${asker.comm}`)
     window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`
