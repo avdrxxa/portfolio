@@ -45,7 +45,7 @@ div.text{
 .carusel{
     display: flex;
     width: calc(200%); 
-    animation: scroll 15s linear infinite;
+    animation: scroll 11s linear infinite;
 }
 
 .carusel img { 
