@@ -36,9 +36,9 @@ nav.sticky{
     backdrop-filter: blur(20px);
     border-radius: 999px;
     border: 1px solid var(--glass-border);
-    /*box-shadow:
+    box-shadow:
         0 8px 30px var(--glass-shadow),
-        inset 0 0 0 1px var(--glass-highlight);*/
+        inset 0 0 0 1px var(--glass-highlight);
 }
 .nav-wrap::after {
     content: "";
