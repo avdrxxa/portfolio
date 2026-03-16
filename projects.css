@@ -59,6 +59,7 @@ article div a{
 
 a.seeMore{
     position: absolute;
+    font-family: 'Carme', sans-serif;
     left: 50%;
     top: 60%;
     transform: translate( -50%, -50%);
@@ -86,6 +87,7 @@ h3{
 }
 .graphic{
     color: white;
+    font-family: 'Carme', sans-serif;
     margin-top: 36px;
     padding: 20px 50px;
     border: 1px;

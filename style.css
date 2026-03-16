@@ -30,6 +30,7 @@ div.text{
     padding: 20px 30px;
     margin-top: 20px;
     border: 1px;
+    font-family: 'Carme', sans-serif;
     border-radius: 30px;
     border-color: rgb(117, 117, 117, 0.7);
     cursor: pointer;

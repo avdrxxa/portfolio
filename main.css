@@ -167,6 +167,7 @@ ul a{
 }
 a.sticky{
     position: fixed;
+    font-family: 'Carme', sans-serif;
     bottom: 30px;
     right: 30px;
     color: white;
