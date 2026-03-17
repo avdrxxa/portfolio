@@ -8,6 +8,10 @@ article{
     margin: 30px;
     position: relative;
 }
+
+.slideshow{
+    position: relative;
+}
 nav img{
     margin: 25px;
     width: auto;
@@ -136,9 +140,6 @@ div.webb{
             width: 650px;
             height: 400px;
         }
-    }
-    a.seeMore{
-        top: 63%;
     }
     nav.sticky{
         justify-content: space-around;
