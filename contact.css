@@ -6,9 +6,7 @@ div img{
 }
 
 body{
-    background-image: url('images/mobil\ bild.avif');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: none;
 }
 
 h2{
@@ -24,7 +22,7 @@ h2{
     align-items: space-between;
     justify-content:center;
     margin: 20px;
-    padding: 40px 40px ;
+    padding: 40px 40px;
     margin-top: 80px;
 }
 
@@ -36,11 +34,21 @@ h2{
     p{
         text-align: justify;
         width: 100%;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    a{
+        text-align: justify;
+        width: 100%;
+        font-size: 20px;
         margin-left: 30px;
     }
 }
+.rad:nth-of-type(3){
+        margin-top: 20px;
+    }
 
-div p{
+div p, div a{
     color: rgb(255, 255, 255);
     text-align: center;
 }
@@ -70,6 +78,15 @@ img.andra{
     margin-top: 40px;
     height: 100px;
     text-align: start;
+}
+div.ask {
+        width: 450px;
+        align-self: center;
+        justify-self: center;
+    }
+div.länk{
+        align-self: center;
+        justify-self: center;
 }
 
 .submit{
@@ -106,6 +123,9 @@ img.andra{
         .namn, .email, .comm{
             padding:20px 200px;
         }
+    }
+    .rad:nth-of-type(3){
+        margin-top: 28px;
     }
     .ask .submit{
         width: 400px;
