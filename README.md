@@ -59,7 +59,7 @@ Simple and clean user interface
 
 ## 📷 Demo
 
-<img width="499" height="1035" alt="Image" src="https://github.com/user-attachments/assets/921acd02-1a92-4680-8207-ee6448e8dbf8" />
-<img width="499" height="1035" alt="Image" src="https://github.com/user-attachments/assets/21586267-9bf1-4337-a008-18e9b1573b20" />
-<img width="499" height="1035" alt="Image" src="https://github.com/user-attachments/assets/95aecf01-355c-4063-8522-664093d2e540" />
-<img width="499" height="1035" alt="Image" src="https://github.com/user-attachments/assets/ecbc31bc-7cac-4551-bc1d-29c07bf6a841" />
+<img width="249" height="1035" alt="Image" src="https://github.com/user-attachments/assets/921acd02-1a92-4680-8207-ee6448e8dbf8" />
+<img width="249" height="1035" alt="Image" src="https://github.com/user-attachments/assets/21586267-9bf1-4337-a008-18e9b1573b20" />
+<img width="249" height="1035" alt="Image" src="https://github.com/user-attachments/assets/95aecf01-355c-4063-8522-664093d2e540" />
+<img width="249" height="1035" alt="Image" src="https://github.com/user-attachments/assets/ecbc31bc-7cac-4551-bc1d-29c07bf6a841" />
