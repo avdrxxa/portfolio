@@ -64,6 +64,7 @@ article div a{
 a.seeMore{
     position: absolute;
     font-family: 'Carme', sans-serif;
+    text-align: center;
     left: 50%;
     top: 60%;
     transform: translate( -50%, -50%);

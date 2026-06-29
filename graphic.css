@@ -63,6 +63,7 @@ article div a{
 
 a.seeMore{
     position: absolute;
+    text-align: center;
     left: 50%;
     top: 60%;
     transform: translate( -50%, -50%);
